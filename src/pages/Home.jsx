@@ -18,7 +18,7 @@ const Home = () => {
       console.log(res.data)
       setPosts(res.data)
       // setLoading(false)
-      const loader = setTimeout(() => setLoading(false), 2000) 
+      setLoading(false) 
     })
     .catch((err) => console.log(err))
   }, [])

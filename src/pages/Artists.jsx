@@ -16,7 +16,7 @@ const Artists = () => {
         .then((res) => {
             console.log(res.data)
             setArtists(res.data)
-            const loader = setTimeout(() => setLoading(false), 2000) 
+            setLoading(false)
         })
         .catch((err) => console.log(err))
     }, [])

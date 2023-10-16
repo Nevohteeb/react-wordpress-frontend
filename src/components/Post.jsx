@@ -23,7 +23,7 @@ const Post = () => {
         axios.get(`${endpoint}`)
         .then((res) => {
             setPost(res.data)
-            const loader = setTimeout(() => setLoading(false), 2000) 
+            setLoading(false)
         })
         .catch((err) => console.log(err))
     }, [id])

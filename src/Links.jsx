@@ -11,6 +11,10 @@ import ArtistsViaGenres from './pages/ArtistsViaGenres'
 import Post from './components/Post'
 import Artist from './components/Artist'
 
+// Import Shop Pages
+import Shopfront from './pages/Shopfront'
+import Product from './components/Product'
+
 const Links = () => {
   return (
     <Routes>
@@ -22,6 +26,9 @@ const Links = () => {
         <Route path='/artists' element={<Artists/>}/>
         <Route path='/artists/:id' element={<Artist/>}/>
         <Route path='/genre/:id' element={<ArtistsViaGenres/>}/>
+        {/* Shop Pages */}
+        <Route path="/shop" element={<Shopfront/>}/>
+        <Route path="/product/:id" element={<Product/>}/>
     </Routes>
   )
 }

@@ -15,7 +15,7 @@ const Dinosaur = () => {
         .then((res) => {
             console.log(res.data)
             setDinos(res.data)
-            const loader = setTimeout(() => setLoading(false), 2000) 
+            setLoading(false)
         })
         .catch((err) => console.log(err))
     }, [])
